@@ -13,6 +13,10 @@
 .about-img{
     box-shadow: var(--light) -5px 5px, var(--secondary) -10px 10px, var(--dark) -15px 15px, #000B1C -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
+.small-fn{
+    font-size: 20px;
+    text-transform: capitalize;
+}
 .scrol-color{
     color: white !important;
 }
@@ -383,8 +387,21 @@ h6,
     background-size: cover;
     height:80vh;
 }
-
-
+.thesis-bg{
+    background: url(../img/library-2.jpg), linear-gradient(#3f3e3e, #000000);
+    background-blend-mode: soft-light !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 100% !important;
+    background-size: cover;
+    height:auto;
+}
+.thesis-bg .mx-auto p, .team-item  .btn, i{
+    color: #FFFFFF !important;
+}
+.thesis-bg h1{
+    color: var(--light);
+}
 /*** Callback ***/
 .callback {
     position: relative;

@@ -128,3 +128,144 @@ window.addEventListener('scroll', () => {
 
     }
 })
+
+// conference map
+
+const conferencePublication = [
+    {
+        id: 1,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 2,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 3,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 4,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 5,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 6,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 7,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 8,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 9,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 10,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 11,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 12,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 13,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 14,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 15,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 16,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 17,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 18,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+    {
+        id: 19,
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"></i></a>
+        `
+    },
+]
+
+
+let conferencePublicationData = document.querySelector('.conferenceEle');
+const conferencePublications = () => {
+    showconference = ''
+    conferencePublication.map((displayconference) => {
+        const {  title, body, download } = displayconference;
+        showconference += `
+       
+                        <div>
+                        <p class="m-0  sm-text">${title}</p>
+                        <p>${body}</p>
+                        <p>${download}</p> 
+                        </div>              
+                    
+        `
+        conferencePublicationData.innerHTML = showconference;
+    })
+}
+conferencePublications()
+
