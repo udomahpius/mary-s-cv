@@ -134,8 +134,8 @@ window.addEventListener('scroll', () => {
 const conferencePublication = [
     {
         id: 1,
-        title: ``,
-        body: ``,
+        title: `peter`,
+        body: `hello world`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
     },
     {
@@ -256,13 +256,17 @@ const conferencePublications = () => {
     conferencePublication.map((displayconference) => {
         const {  title, body, download } = displayconference;
         showconference += `
-       
-                        <div>
-                        <p class="m-0  sm-text">${title}</p>
-                        <p>${body}</p>
-                        <p>${download}</p> 
-                        </div>              
-                    
+      
+                    <div class="project-item px-3 py-3 shadow-sm rounded-2 pb-5  text-dark ">
+                    <div>
+                    <p class="m-0  sm-text">
+                    <p>${title}</p>
+                    <p>${body}</p>
+                    <p>${download}</p> 
+                    </p>    
+                    </div>  
+                    </div>
+                                         
         `
         conferencePublicationData.innerHTML = showconference;
     })
