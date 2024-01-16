@@ -37,6 +37,13 @@
 
 }
 
+    @media screen and (max-width: 700px) {
+        .sm-margin{
+            margin-top: 2rem !important;
+        }
+    }
+
+
 
 .list-m ul li{
     margin-bottom: 2rem;

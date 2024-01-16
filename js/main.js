@@ -250,26 +250,23 @@ const conferencePublication = [
 ]
 
 
-let conferencePublicationData = document.querySelector('.conferenceEle');
 const conferencePublications = () => {
-    showconference = ''
-    conferencePublication.map((displayconference) => {
-        const {  title, body, download } = displayconference;
-        showconference += `
-      
-                    <div class="project-item px-3 py-3 shadow-sm rounded-2 pb-5  text-dark ">
-                    <div>
-                    <p class="m-0  sm-text">
-                    <p>${title}</p>
-                    <p>${body}</p>
-                    <p>${download}</p> 
-                    </p>    
-                    </div>  
-                    </div>
-                                         
+    let conferencePublicationData = document.querySelector('.conferenceEle');
+    showConference = ''
+    conferencePublication.map((displayConference) => {
+        const {  title, body, download } = displayConference;
+        showConference += `
+                       <div class="m-0  sm-text"> <b>${title}</b><br>
+                       ${body}
+                       <a href="#">${download} </a>
+                       </div>
+                       
         `
-        conferencePublicationData.innerHTML = showconference;
+
     })
+    conferencePublicationData.innerHTML = showConference;
+
+
 }
 conferencePublications()
 
