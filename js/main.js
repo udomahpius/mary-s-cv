@@ -129,144 +129,162 @@ window.addEventListener('scroll', () => {
     }
 })
 
-// conference map
 
-const conferencePublication = [
+// JOURNAL PUBLICATIONS SECTION
+
+const journalPublication = [
     {
         id: 1,
-        title: `peter`,
-        body: `hello world`,
+        img:"../img/mary's-bk-cover.jpg",
+        title: `Udo, U. U., Ukpak, A. A. and Iwot, M. J. (2011).`,
+        body: ` Utilization Patterns of Information
+        Sources in Pharmacy Library of University of Uyo. Nigerian Journal of Pharmaceutical
+        and Applied Science Research, (1). pp 1-11.`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
     },
     {
         id: 2,
-        title: ``,
-        body: ``,
+        img:"../img/mary's-bk-cover.jpg",
+        title: `Richard, E. O. and Iwot, M.J. (2016).`,
+        body: ` Users’ attitude towards utilization of Library
+        Services in Akwa Ibom State University. pp131`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
     },
     {
         id: 3,
-        title: ``,
-        body: ``,
+        img:"../img/mary's-bk-cover.jpg",
+        title: `Iwot, M. J. and Ntui, A.I. (2016).`,
+        body: ` Acquisition procedures in Nigeria Academic
+        Libraries. pp169.`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
     },
     {
         id: 4,
-        title: ``,
-        body: ``,
+        img:"../img/mary's-bk-cover.jpg",
+        title: `Alex-Nmecha, J.C and Bassey, M.M. (2017).`,
+        body: ` Strategies for successful Networkingin Libraries. In International Journal of Applied Technologies in Library &
+        Information Management. (3) 2, 78-84.`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
     },
     {
         id: 5,
-        title: ``,
-        body: ``,
+        img:"../img/mary's-bk-cover.jpg",
+        title: `David-West, B. T., and Bassey, M.M. (2017).`,
+        body: ` Advocacy for school libraries in Nigeria. In
+        International journal of Scientific Research in Education.10 (4)373- 378.`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
     },
     {
         id: 6,
-        title: ``,
-        body: ``,
+        img:"../img/mary's-bk-cover.jpg",
+        title: `Bassey, M. M. (2018). `,
+        body: `influence of cloud computing in knowledge management among
+        universities libraries in Akwa Ibom State, Nigeria, in Librarianship in Africa, Journal of
+        Library and Information Science, vol. 16 (1&2) December 2018.`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
     },
     {
         id: 7,
-        title: ``,
-        body: ``,
+        img:"../img/mary's-bk-cover.jpg",
+        title: `Shaibu Leonard and Mary Mfon Bassey (2017).`,
+        body: ` Managing ICT for Effective Secondary
+        School students’ academic performance and sustainable development in Kogi state
+        education zone. In international Journal of the Forum for African Women Educationalists,
+        Vol. 5 No.4,`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
     },
     {
         id: 8,
-        title: ``,
-        body: ``,
+        img:"../img/mary's-bk-cover.jpg",
+        title: `Bassey, Mary Mfon (2018) `,
+        body: `Women and Libraries in Promotion of National Integration
+        for Development. In International Journal of the Forum for African Women
+        Educationalists, Vol.6 No.3,`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
     },
     {
         id: 9,
-        title: ``,
-        body: ``,
+        img:"../img/mary's-bk-cover.jpg",
+        title: `Bassey Mary M., Umofia, Siado M. and Samuel, Uduak, E. (2019)`,
+        body: `Repositioning Social
+        media usability and English language acquisition among students in Uyo Local
+        Government Area of Akwa Ibom State, Nigeria. In African Journal of Education and
+        Information Management (AJEIMA) Vol. 17 No. 1.`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
     },
     {
         id: 10,
-        title: ``,
-        body: ``,
+        img:"../img/mary's-bk-cover.jpg",
+        title: `Madu Samuel, Ekpo Charles G. and Bassey Mary Mfon (2019)`,
+        body: ` Appraisal of the impact of
+        lecturing experience and the use of Information and Communication Technology (ICT) on
+        environmental education students’ academic achievement in South- East Universities.
+        Academic Journal of Research and Development (AJORAD) VOL11. No. 1 Conference
+        Edition August 2019.`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
     },
     {
         id: 11,
-        title: ``,
-        body: ``,
+        img:"../img/mary's-bk-cover.jpg",
+        title: `Juilet C. Alex Nmecha and Mary Mfon Bassey (2020)`,
+        body: `Library Advocacy: A Strategy for
+        sustaining library services in the 21” Century. Anthology in library and information science
+        a festschrift in honor of professor Blessing Esuru Ahiauzu / edited by Vivien O, Emmanuel,
+        Innocent Ordu and Emmanuel Anele. - Owerri: App`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
     },
     {
         id: 12,
-        title: ``,
-        body: ``,
+        img:"../img/mary's-bk-cover.jpg",
+        title: `Mary M. Bassey and Margaret Sylvanus Umoh (2021).`,
+        body: ` Library roles in e- learning
+        through information and communication technology: the prospect and challenges. in
+        Library and information science compendium, edited by Ryland k. Fletcher. Germany:
+        global academic stars promoters (GASPRO).`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
     },
     {
         id: 13,
-        title: ``,
-        body: ``,
+        img:"../img/mary's-bk-cover.jpg",
+        title: `Konye Cynthia Ikems and Mary Mfon Bassey (2023)`,
+        body: ` People’s perception and trust in
+        Radio journalism: A Panacea to mitigating of fake news from social media; in universal
+        journal of Education, science and Technology. Network of Global who is who in academia,
+        United Kingdom. Vol, 5. No.1.`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
-    },
-    {
-        id: 14,
-        title: ``,
-        body: ``,
-        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
-    },
-    {
-        id: 15,
-        title: ``,
-        body: ``,
-        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
-    },
-    {
-        id: 16,
-        title: ``,
-        body: ``,
-        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
-    },
-    {
-        id: 17,
-        title: ``,
-        body: ``,
-        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
-    },
-    {
-        id: 18,
-        title: ``,
-        body: ``,
-        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
-    },
-    {
-        id: 19,
-        title: ``,
-        body: ``,
-        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"></i></a>
-        `
     },
 ]
 
+let innerHtmlEle = document.querySelector(".journal");
+let journalContent = ''
+journalPublication.map((mapJournal) => {
+    const { title, img, body, download } = mapJournal
+    journalContent += `
+    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item ">
+                    <img class="img-fluid rounded" src=${img} alt="">
+                        <div class="shadow-sm px-2 py-2 text-center ht">
+                        <P class=" ">
+                            <p class="text-dark fw-bolder m-0">${title}</p>
+                           <p class="m-0 sm-text-lg"> ${body}</p> 
+                           <p>${download}</p>
+                        </P>
+                    </div>
+                    </div>
+                </div>
+                
+    `
+    innerHtmlEle.innerHTML = journalContent
+})
 
-const conferencePublications = () => {
-    let conferencePublicationData = document.querySelector('.conferenceEle');
-    showConference = ''
-    conferencePublication.map((displayConference) => {
-        const {  title, body, download } = displayConference;
-        showConference += `
-                       <div class="m-0  sm-text"> <b>${title}</b><br>
-                       ${body}
-                       <a href="#">${download} </a>
-                       </div>
-                       
-        `
+//BOOK PUBLICATIONS SECTION
 
-    })
-    conferencePublicationData.innerHTML = showConference;
-
-
-}
-conferencePublications()
-
+const bookPublication = [
+    {
+        id: 1,
+        img:"../img/mary's-bk-cover.jpg",
+        title: ``,
+        body: ``,
+        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
+    },
+]

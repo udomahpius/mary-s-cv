@@ -84,37 +84,10 @@
 
 }
 
-.slick-bg-1 {
-    background-color: #1a1708;
-}
-
-.slick-bg-2 {
+.slick-bg {
     background-color: var(--light);
 }
 
-.slick-bg-3 {
-    background-color: #0d9b88;
-}
-
-.slick-bg-4 {
-    background-color: #8d6907;
-}
-
-.slick-bg-5 {
-    background-color: #5e4f35;
-}
-
-.slick-bg-6 {
-    background-color: #6e804d;
-}
-
-.slick-bg-7 {
-    background-color: #0a77aa;
-}
-
-.slick-bg-8 {
-    background-color: #273d46;
-}
 
 .caro-series-color .project-item{
     height: 350px !important;
