@@ -37,9 +37,9 @@
 
 }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width:700px) {
         .sm-margin{
-            margin-bottom: 5rem !important;
+            padding-top: 3rem !important;
         }
     }
 
@@ -342,6 +342,7 @@ h6,
     background-size: cover;
     width: 100% !important;
     height: auto !important;
+    background-position: center !important;
 }
 /* @media screen and (max-width: 95px) {
     .page-header{
