@@ -136,7 +136,7 @@ const journalPublication = [
     {
         id: 1,
         img:"../img/mary's-bk-cover.jpg",
-        title: `Udo, U. U., Ukpak, A. A. and Iwot, M. J. (2011).`,
+        title: `Udo, U. U., Ukpak, A. A. and Iwot, M. J. (2011)`,
         body: ` Utilization Patterns of Information
         Sources in Pharmacy Library of University of Uyo. Nigerian Journal of Pharmaceutical
         and Applied Science Research, (1). pp 1-11.`,
@@ -145,7 +145,7 @@ const journalPublication = [
     {
         id: 2,
         img:"../img/mary's-bk-cover.jpg",
-        title: `Richard, E. O. and Iwot, M.J. (2016).`,
+        title: `Richard, E. O. and Iwot, M.J. (2016)`,
         body: ` Users’ attitude towards utilization of Library
         Services in Akwa Ibom State University. pp131`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
@@ -153,7 +153,7 @@ const journalPublication = [
     {
         id: 3,
         img:"../img/mary's-bk-cover.jpg",
-        title: `Iwot, M. J. and Ntui, A.I. (2016).`,
+        title: `Iwot, M. J. and Ntui, A.I. (2016)`,
         body: ` Acquisition procedures in Nigeria Academic
         Libraries. pp169.`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
@@ -161,7 +161,7 @@ const journalPublication = [
     {
         id: 4,
         img:"../img/mary's-bk-cover.jpg",
-        title: `Alex-Nmecha, J.C and Bassey, M.M. (2017).`,
+        title: `Alex-Nmecha, J.C and Bassey, M.M. (2017)`,
         body: ` Strategies for successful Networkingin Libraries. In International Journal of Applied Technologies in Library &
         Information Management. (3) 2, 78-84.`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
@@ -169,7 +169,7 @@ const journalPublication = [
     {
         id: 5,
         img:"../img/mary's-bk-cover.jpg",
-        title: `David-West, B. T., and Bassey, M.M. (2017).`,
+        title: `David-West, B. T., and Bassey, M.M. (2017)`,
         body: ` Advocacy for school libraries in Nigeria. In
         International journal of Scientific Research in Education.10 (4)373- 378.`,
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
@@ -177,7 +177,7 @@ const journalPublication = [
     {
         id: 6,
         img:"../img/mary's-bk-cover.jpg",
-        title: `Bassey, M. M. (2018). `,
+        title: `Bassey, M. M. (2018) `,
         body: `influence of cloud computing in knowledge management among
         universities libraries in Akwa Ibom State, Nigeria, in Librarianship in Africa, Journal of
         Library and Information Science, vol. 16 (1&2) December 2018.`,
@@ -186,7 +186,7 @@ const journalPublication = [
     {
         id: 7,
         img:"../img/mary's-bk-cover.jpg",
-        title: `Shaibu Leonard and Mary Mfon Bassey (2017).`,
+        title: `Shaibu Leonard and Mary Mfon Bassey (2017)`,
         body: ` Managing ICT for Effective Secondary
         School students’ academic performance and sustainable development in Kogi state
         education zone. In international Journal of the Forum for African Women Educationalists,
@@ -236,7 +236,7 @@ const journalPublication = [
     {
         id: 12,
         img:"../img/mary's-bk-cover.jpg",
-        title: `Mary M. Bassey and Margaret Sylvanus Umoh (2021).`,
+        title: `Mary M. Bassey and Margaret Sylvanus Umoh (2021)`,
         body: ` Library roles in e- learning
         through information and communication technology: the prospect and challenges. in
         Library and information science compendium, edited by Ryland k. Fletcher. Germany:
@@ -254,6 +254,8 @@ const journalPublication = [
         download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
     },
 ]
+const journalComponent = (() => {
+    
 
 let innerHtmlEle = document.querySelector(".journal");
 let journalContent = ''
@@ -276,15 +278,9 @@ journalPublication.map((mapJournal) => {
     `
     innerHtmlEle.innerHTML = journalContent
 })
+})
+journalComponent()
 
-//BOOK PUBLICATIONS SECTION
 
-const bookPublication = [
-    {
-        id: 1,
-        img:"../img/mary's-bk-cover.jpg",
-        title: ``,
-        body: ``,
-        download:` <a class="btn btn-primary  py-6 px-6 mt-2" href="#" download="#">Download <i class="fa fa-download"> </i></a>`
-    },
-]
+
+
