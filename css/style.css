@@ -26,6 +26,10 @@
 .nav-list-color{
     color: var(--light) !important;
 }
+.dropdown-list-color{
+    color: var(--light) !important;
+
+}
 .dropdown-toggle{
     color: var(--light) !important;
 }
